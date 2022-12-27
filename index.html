@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Version Control with GIT</title>
+	<meta name="AUTHOR" content="Hector Jose Vurchio Hurtado">
+	<meta name="KEYWORDS" content="git, without git, version control, bash, commit, pull, push">
+	<meta name="DESCRIPTION" content="Controlling the code input within an application through the using of git">
+	<meta name="TITLE" content="Version Control with GIT">
+	<meta name="keywords" content="Version Control with GIT">
+	<meta name="keywords" content="Working without GIT">
+	<meta name="keywords" content="Starting with the Version Control">
+	<meta name="keywords" content="First Command for GIT">
+	<meta name="keywords" content="GIT Condition of the files Within the Repository">
+	<meta name="keywords" content="GIT Adding a file into the Staging Area">
+	<meta name="keywords" content="GIT Inserting the Files Into the Local Repository">
+	<meta name="keywords" content="GIT Inserting All files in Staging Area with Just One Command">
+	<meta name="keywords" content="GIT Amount of Commits in the Local Repository">
+	<meta name="keywords" content="GIT Recover the File at the Condition it was Before the Lines Were Erased">
+    <link rel="stylesheet" href="algo_style.css">
+	<link rel="canonical" href="https://www.hjvalue.com">
+	<meta name="ROBOTS" content="INDEX,FOLLOW">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+	<header>
+		<span>Hector Jose Vurchio Hurtado -- <a href="https://www.hjvalue.com">www.hjvalue.com<a></span>
+		<h1>Version Control with GIT</h1>
+	</header>
+	<article>
+		<section class="page" id="page-1"><!-- 1 -->
+			<div class="content">
+				<div class="left">
+					<h2>Working without GIT</h2>
+					<p>
+						Some control version performance when developing the application is necessary, otherwise every 
+						time when changing or starting something new with the code, the number of files will uncomfortable 
+						increase as shown in this folder:
+					</p>
+					<figure>
+					  <img id="fig-1" src="./images/pic_1.png" alt="Working without GIT" style="width:100%">
+					  <figcaption>Fig.1 - Working without GIT.</figcaption>
+					</figure>
+					<p>
+						And so on, the version of the version or sometimes a folder named &quot;not show yet&quot;. To follow step by 
+						step how this version control works, we are going to start over writing the code of the Election2021 
+						class, so the first lines:
+					</p>
+					<h2>Starting with the Version Control</h2>
+					<figure>
+					  <img id="fig-2" src="./images/pic_2.png" alt="Starting with the Version Control" style="width:100%">
+					  <figcaption>Fig.2 - Starting with the Version Control.</figcaption>
+					</figure>
+					<p>
+						The next step and assuming that git is installed, by left clicking over the mouse within the folder 
+						where the file is located, and then over Git Bash Here.
+					</p>
+					<figure style="text-align: center;">
+					  <img id="fig-3" src="./images/pic_3.png" alt="Open Git Bash" style="width:74%">
+					  <figcaption>Fig.3 - Open Git Bash.</figcaption>
+					</figure>
+				</div>
+				<div class="right">
+					<p>Next shows up the Git Bash console:</p>
+					<figure>
+					  <img id="fig-4" src="./images/pic_4.png" alt="Git Bash Console" style="width:100%">
+					  <figcaption>Fig.4 - Git Bash Console.</figcaption>
+					</figure>
+					<h2>First Command for GIT</h2>
+					<p>
+						The fist command we must write is <code style="color: #2a2ac9;font-weight: bold;">git init</code> so that Git creates the local repository 
+						and the staging area:
+					</p>
+					<figure>
+					  <img id="fig-5" src="./images/pic_5.png" alt="Creating GIT Repository" style="width:100%">
+					  <figcaption>Fig.5 - Creating GIT Repository.</figcaption>
+					</figure>
+					<p>Then the folder .git is created. Take an account that this folder in hidden.</p>
+					<h2>GIT Condition of the files Within the Repository</h2>
+					<figure>
+					  <img id="fig-6" src="./images/pic_6.png" alt=".git folder" style="width:100%">
+					  <figcaption>Fig.5 - .git folder.</figcaption>
+					</figure>
+					<p>
+						Now using the <code style="color: #2a2ac9;font-weight: bold;">git status</code> command, we can know 
+						about the files condition within the created repository. No commits yet means there is nothing in the 
+						staging area.
+					</p>
+					<figure>
+					  <img id="fig-7" src="./images/pic_7.png" alt="Condition of the files Within the Repository" style="width:100%">
+					  <figcaption>Fig.7 - Condition of the files Within the Repository.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page-2"><!-- 2 -->
+			<div class="content">
+				<div class="left">
+					<h2>Adding a file into the Staging Area</h2>
+					<p>
+						Let us add the file Election2021.java to the staging area with the command 
+						<code style="color: #2a2ac9;font-weight: bold;">git add </code>Election2021.java described in
+						the post <a href="https://hectorvurchio.github.io/Algorithm-Performance-Analysis/">Algorithm-Performance-Analysis </a>
+						yelding the lines below:
+					</p>
+					<figure>
+					  <img id="fig-8" src="./images/pic_8.png" alt="Adding a file into the Staging Area" style="width:100%">
+					  <figcaption>Fig.8 - Adding a file into the Staging Area.</figcaption>
+					</figure>
+					<p>Now again another query with <code style="color: #2a2ac9;font-weight: bold;">git status</code> command:</p>
+					<figure>
+					  <img id="fig-9" src="./images/pic_9.png" alt="Checking file status within the repository" style="width:100%">
+					  <figcaption>Fig.9 - Checking File Status Within the Repository.</figcaption>
+					</figure>
+					<p>
+						This change from red to green of the Election2021.java file means that such file is already in the 
+						staging area and waiting to be committed ending up after the last action in the local repository. 
+						Writing then the same command but this time <code style="color: #2a2ac9;font-weight: bold;">git status -s</code> 
+						we will see:
+					</p>
+					<figure>
+					  <img id="fig-10" src="./images/pic_10.png" alt="Indicating the Staging Area" style="width:100%">
+					  <figcaption>Fig.10 - Indicating the Staging Area.</figcaption>
+					</figure>
+					<p>
+						The green A on the left of the file name indicates that Election2021.java is now added to the staging 
+						area. What happens if we create a new file, let us say the BirthCertificate.java file which includes 
+						the BirthCertificate class as well as within it is written the following lines of code:
+					</p>
+					<figure>
+					  <img id="fig-11" src="./images/pic_11.png" alt="Writing lines of code within the file" style="width:100%">
+					  <figcaption>Fig.11 - Writing Lines of Code Within the File.</figcaption>
+					</figure>
+					<p>The folder with its files results like this:</p>
+					<figure>
+					  <img id="fig-12" src="./images/pic_12.png" alt="New file created within the root folder" style="width:100%">
+					  <figcaption>Fig.12 - New File Created Within the Root Folder.</figcaption>
+					</figure>
+				</div>
+				<div class="right">
+					<p>
+						Getting back to the Git Bash we continue here writing <code style="color: #2a2ac9;font-weight: bold;">git status -s</code> 
+						command yielding:
+					</p>
+					<figure>
+					  <img id="fig-13" src="./images/pic_13.png" alt="GIT Unfollowed Files" style="width:100%">
+					  <figcaption>Fig.13 - GIT Unfollowed Files.</figcaption>
+					</figure>
+					<p>
+						The file BirthCertificate.java has on its left side a double red question mark &quot;??&quot;. This means 
+						that any change in such file is not yet being followed by the git unlike Election2021.java which 
+						is doing otherwise. Checking again with the two files and with git status command:
+					</p>
+					<figure>
+					  <img id="fig-14" src="./images/pic_14.png" alt="GIT Unfollowed Files" style="width:100%">
+					  <figcaption>Fig.14 - GIT Unfollowed Files.</figcaption>
+					</figure>
+					<p>
+						In the image above Election2021.java in green is in the staging area but BirthCertificate.java in 
+						red is not even in the stage area, git knows that the file is there, but it remains untracked until 
+						with the <code style="color: #2a2ac9;font-weight: bold;">git add</code> command is applied over such file so:
+					</p>
+					<figure>
+					  <img id="fig-15" src="./images/pic_15.png" alt="GIT Inserting Files in the Staging Area" style="width:100%">
+					  <figcaption>Fig.15 - GIT Inserting Files in the Staging Area.</figcaption>
+					</figure>
+					<h2>GIT Inserting the Files Into the Local Repository</h2>
+					<p>
+						Now the two files have shown up in green, namely both files are in the staging area ready to be 
+						tracked its changes by git program. Let us take the files to the local repository using 
+						<code style="color: #2a2ac9;font-weight: bold;">git commit </code> command like this:
+					</p>
+					<figure>
+					  <img id="fig-16" src="./images/pic_16.png" alt="GIT Inserting the Files Into the Local Repository" style="width:100%">
+					  <figcaption>Fig.16 - GIT Inserting the Files Into the Local Repository.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page-3"><!-- 3 -->
+			<div class="content">
+				<div class="left">
+					<p>
+						This command uses -m parameter following by some description given by the code writer, in this case 
+						&quot;this is the description of the commit&quot;. The 10 insertion should refer to the lines added to the 
+						project with both files. Let us check again the status:
+					</p>
+					<figure>
+					  <img id="fig-17" src="./images/pic_17.png" alt="GIT checking status" style="width:100%">
+					  <figcaption>Fig.17 - GIT checking status.</figcaption>
+					</figure>
+					<p>
+						Both files are now located in the local repository. Then we are going to add some code in file 
+						Election2021.java.
+					</p>
+					<figure>
+					  <img id="fig-18" src="./images/pic_18.png" alt="GIT lines inserted in file" style="width:100%">
+					  <figcaption>Fig.18 - GIT lines inserted in file.</figcaption>
+					</figure>
+					<p>Using the status short format through <code style="color: #2a2ac9;font-weight: bold;">git status -s</code> cmd we have:</p>
+					<figure>
+					  <img id="fig-19" src="./images/pic_19.png" alt="git status -s" style="width:100%">
+					  <figcaption>Fig.19 - git status -s.</figcaption>
+					</figure>
+					<p>
+						The red M appeared on the left side of Election2021.java indicates that the file has been modified. 
+						Now using the <code style="color: #2a2ac9;font-weight: bold;">git status</code> command alone, the screen shows up on this way:
+					</p>
+					<figure>
+					  <img id="fig-20" src="./images/pic_20.png" alt="git status" style="width:100%">
+					  <figcaption>Fig.20 - git status.</figcaption>
+					</figure>
+					<p>
+						It indicates the modification with more details than using -s option. The next step is write code in 
+						the file BirthCertificate.java and use again the git status command so that the next command to the 
+						staging area would be git add . instead of git add Election2021.java and git add 
+						BirthCertificate.java. 
+					</p>
+				</div>
+				<div class="right">
+					<h2>GIT Inserting All files in Staging Area with Just One Command</h2>
+					<figure>
+					  <img id="fig-21" src="./images/pic_21.png" alt="GIT Inserting All files in Staging Area with Just One Command" style="width:100%">
+					  <figcaption>Fig.21 - GIT Inserting All files in Staging Area with Just One Command.</figcaption>
+					</figure>
+					<p>
+						The command <code style="color: #2a2ac9;font-weight: bold;">git add . </code>send to the staging area 
+						all the modified files avoiding write the command <code style="color: #2a2ac9;font-weight: bold;">git add </code>
+						file by file. Next applying <code style="color: #2a2ac9;font-weight: bold;">git commit </code>command:
+					</p>
+					<figure>
+					  <img id="fig-22" src="./images/pic_22.png" alt="git commit Command" style="width:100%">
+					  <figcaption>Fig.22 - git commit Command.</figcaption>
+					</figure>
+					<p>
+						So, let us continue to add lines in Election2021.java files, send it to the staging area and to the 
+						local repository(commit) and look what happen:
+					</p>
+					<figure>
+					  <img id="fig-23" src="./images/pic_23.png" alt="GIT new lines added to the repository file" style="width:100%">
+					  <figcaption>Fig.23 - GIT New Lines Added to the Repository File.</figcaption>
+					</figure>
+					<p>Repeating the process of adding lines to the current file:</p>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page-4"><!-- 4 -->
+			<div class="content">
+				<div class="left">
+					<figure>
+					  <img id="fig-24" src="./images/pic_24.png" alt="GIT adding lines to the current file" style="width:100%">
+					  <figcaption>Fig.24 - GIT Adding Lines to the Current File.</figcaption>
+					</figure>
+					<figure>
+					  <img id="fig-25" src="./images/pic_25.png" alt="GIT adding lines to the current file" style="width:100%">
+					  <figcaption>Fig.25 - GIT Adding Lines to the Current File.</figcaption>
+					</figure>
+				</div>
+				<div class="right">
+					<p>The same would happen if we delete lines of code from Election2021.java file, e.g.:</p>
+					<figure>
+					  <img id="fig-26" src="./images/pic_26.png" alt="GIT deleting lines to the current file" style="width:100%">
+					  <figcaption>Fig.26 - GIT Deleting Lines to the Current File.</figcaption>
+					</figure>
+					<p>Remaining the file at this point:</p>
+					<figure>
+					  <img id="fig-27" src="./images/pic_27.png" alt="GIT deleting lines to the current file" style="width:100%">
+					  <figcaption>Fig.27 - GIT Deleting Lines to the Current File.</figcaption>
+					</figure>
+					<p>Applying the git commands used so far:</p>
+					<figure>
+					  <img id="fig-28" src="./images/pic_28.png" alt="GIT applying commands" style="width:100%">
+					  <figcaption>Fig.28 - GIT Applying Commands Used.</figcaption>
+					</figure>
+					<h2>GIT Amount of Commits in the Local Repository</h2>
+					<p>
+						Having done this, the next question would be how many copies or commits we have in the local 
+						repository until now? We find out the answer through the <code style="color: #2a2ac9;font-weight: bold;">git log --oneline </code>
+						command:
+					</p>
+					<figure>
+					  <img id="fig-29" src="./images/pic_29.png" alt="GIT Amount of Commits in the Local Repository" style="width:100%">
+					  <figcaption>Fig.29 - GIT Amount of Commits in the Local Repository.</figcaption>
+					</figure>
+					<p>The yellow left characters match the identification of each commit given by git program. </p>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page-5"><!-- 5 -->
+			<div class="content">
+				<div class="left">
+					<h2>GIT Recover the File at the Condition it was Before the Lines Were Erased</h2>
+					<p>
+						At this point we want to recover the file in the condition before the lines were erased. To perform 
+						this operation the command <code style="color: #2a2ac9;font-weight: bold;">git reset --hard </code>+ commit code used.
+					</p>
+					<figure>
+					  <img id="fig-30" src="./images/pic_30.png" alt="GIT Recover the File at the Condition it was Before the Lines Were Erased" style="width:100%">
+					  <figcaption>Fig.30 - GIT Recover the File at the Condition it was Before the Lines Were Erased.</figcaption>
+					</figure>
+					<p>
+						This may be useful when changed to the file were applied and those new changes does not match our 
+						expectations, in this case let us suppose that we want to get back to the condition when the commit 
+						was <code style="color: red;font-weight: bold;">a8d7191</code>.
+					</p>
+					<figure>
+					  <img id="fig-31" src="./images/pic_31.png" alt="GIT reset hard" style="width:100%">
+					  <figcaption>Fig.31 - git reset --hard.</figcaption>
+					</figure>
+					<p>
+						The NotePad++ ext editor recognize that something has changed in Election2021.java files throwing a 
+						dialog box:
+					</p>
+					<figure>
+					  <img id="fig-32" src="./images/pic_32.png" alt="note++ dialog box" style="width:100%">
+					  <figcaption>Fig.32 - Note++ dialog box.</figcaption>
+					</figure>
+					<p>After say yes, we obtain one more time the lines erased or the desired condition:</p>
+					<figure>
+					  <img id="fig-33" src="./images/pic_33.png" alt="GIT Recover the Altered Lines in File" style="width:100%">
+					  <figcaption>Fig.33 - GIT Recover the Altered Lines in File.</figcaption>
+					</figure>
+				</div>
+				<div class="right">
+				</div>
+			</div>
+		</section>
+	</article>
+  </body>
+</html>
